@@ -1,0 +1,16 @@
+#Amstrong Number
+num=1042000
+
+while num<702648265:
+
+	temp=num
+	ripe=0
+	raw=0
+	while temp>0:
+		raw=int(temp%10)
+		ripe=int(ripe+raw**(3))
+		temp=int(temp/10)
+
+	if num==ripe:
+		print("the first amstrong number is",num)
+		break
