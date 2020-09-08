@@ -1,4 +1,5 @@
 #Amstrong Number
+f=0
 num=1042000
 
 while num<702648265:
@@ -13,4 +14,10 @@ while num<702648265:
 
 	if num==ripe:
 		print("the first amstrong number is",num)
+		f=f+1
 		break
+	num=num+1
+if f!=1:
+	print("there are no amstrong numbers between 1042000 and 702648265")
+#output:
+#there are no amstrong numbers between 1042000 and 702648265
